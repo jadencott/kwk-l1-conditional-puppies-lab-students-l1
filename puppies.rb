@@ -37,3 +37,12 @@ def some_puppies(number_of_puppies, maximum_puppers)
 
 # BONUS
 # 4. Rachel has decided to track both her puppy allowance AND her cat allowance. Write a method called new_animal accumulation that takes in two arguments - number of puppies and number of cats. As long as she gets zero puppies OR zero cats this method should return "Good job!". If she gets 1 or more puppies AND 1 or more cats it should tell her she should really slow back down!
+def new_animal (puppies,cats)
+  if puppies==0 || cats==0 
+    puts "Good Job, Rachel"
+  else puppies >= 1 && cats >= 1
+    puts 'You should really slow the heck down.'
+  end 
+end 
+
+new_animal(2,19)
